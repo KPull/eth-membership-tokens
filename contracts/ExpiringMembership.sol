@@ -1,16 +1,15 @@
-pragma solidity ^0.4.11;
+pragma solidity ^0.4.13;
 
 import "./owned.sol";
 
 /**
  * This smart contract keeps whether addresses are part of an organisation. Membership will expire
- * after a certain time unless it is renewed. One can think of this contract issuing non-transferable
- * "membership tokens" which will expire after a certain while.
+ * after a certain time unless it is renewed.
  */
 contract ExpiringMembership is owned {
 
-    event RegistrarAdded(address owner, address registrar, string description);
-    event RegistrarRemoved(address owner, address registrar);
+    event RegistrarAdded(address indexed owner, address indexed registrar, string description);
+    event RegistrarRemoved(address indexed owner, address indexed registrar);
     event NewMemberRegistered(address indexed member, address indexed registrar, uint duration, uint expiryTimestamp);
     event MembershipExtended(address indexed member, address indexed registrar, uint duration, uint expiryTimestamp);
     event MembershipRevoked(address indexed member, address indexed revoker);
@@ -38,7 +37,15 @@ contract ExpiringMembership is owned {
      * Checks that the transaction source is a registrar or this contract's owner
      */
     modifier hasRegistrationPrivileges() {
-        assert(msg.sender == owner || isRegistrar[msg.sender]);
+        require(msg.sender == owner || isRegistrar[msg.sender]);
+        _;
+    }
+
+    /*
+     * Checks that the specified address is currently a member
+     */
+    modifier member(address _member) {
+        require(isMember(_member));
         _;
     }
 
@@ -51,7 +58,9 @@ contract ExpiringMembership is owned {
      * stored in this contract's event log.
      */
     function addRegistrar(address _registrar, string description) byOwner {
-        assert(!isRegistrar[_registrar]);
+        if (isRegistrar[_registrar]) {
+            return;
+        }
         isRegistrar[_registrar] = true;
         RegistrarAdded(msg.sender, _registrar, description);
     }
@@ -60,7 +69,9 @@ contract ExpiringMembership is owned {
      * Allows this contract's owner to remove a registrar.
      */
     function removeRegistrar(address _registrar) byOwner {
-        assert(isRegistrar[_registrar]);
+        if (!isRegistrar[_registrar]) {
+            return;
+        }
         isRegistrar[_registrar] = false;
         RegistrarRemoved(msg.sender, _registrar);
     }
@@ -68,7 +79,7 @@ contract ExpiringMembership is owned {
     /**
      * Register or renew an address' membership. The membership token will last
      * for the given duration amount. When renewing a membership, the expiry date
-     * will be EXTENDED to whatever the previous expiry date was.
+     * will be EXTENDED and added to whatever the previous expiry date.
      *
      * This function can only be invoked by registrars or this contract's owner.
      */
@@ -76,7 +87,7 @@ contract ExpiringMembership is owned {
         if (isMember(_member)) {
            extendMembership(_member, duration);
         } else {
-            registerNewMember(_member, duration);
+           registerNewMember(_member, duration);
         }
     }
 

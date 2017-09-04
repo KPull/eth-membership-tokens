@@ -1,13 +1,13 @@
-pragma solidity ^0.4.11;
+pragma solidity ^0.4.13;
 
 contract owned {
 
-    event OwnerChanged(address oldOwner, address newOwner);
+    event OwnerChanged(address indexed oldOwner, address indexed newOwner);
 
     address public owner;
 
     modifier byOwner() {
-        assert(msg.sender == owner);
+        require(msg.sender == owner);
         _;
     }
 
