@@ -54,7 +54,7 @@ contract EthApplicationRegistrar is ApplicationSource, owned {
         _;
     }
 
-    function EtherPaymentRegistrar(ExpiringMembership _membershipContract, Application _applications, uint _price, uint _duration) {
+    function EthApplicationRegistrar(ExpiringMembership _membershipContract, Application _applications, uint _price, uint _duration) {
         owner = msg.sender;
         membershipContract = _membershipContract;
         applications = _applications;

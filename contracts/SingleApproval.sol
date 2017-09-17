@@ -1,6 +1,7 @@
 pragma solidity ^0.4.13;
 
 import "./owned.sol";
+import "./Application.sol";
 import "./ApplicationSource.sol";
 
 /**
@@ -10,7 +11,7 @@ import "./ApplicationSource.sol";
  * - Applicant: The address on whose behalf the application is being made.
  * - Approvers: A set of addresses that can approve applications.
  */
-contract SingleApproval is owned {
+contract SingleApproval is Application, owned {
 
     event ApproverAdded(address indexed owner, address indexed approver, string description);
     event ApproverRemoved(address indexed owner, address indexed approver);
@@ -88,6 +89,14 @@ contract SingleApproval is owned {
         assert(applications[source][_applicant]);
         applications[source][_applicant] = false;
         ApplicationWithdrawn(source, _applicant);
+    }
+
+    function hasOpenApplicationFromSource(address source, address _applicant) constant returns (bool) {
+        return applications[source][_applicant];
+    }
+
+    function hasOpenApplication(address _applicant) constant returns (bool) {
+        return hasOpenApplicationFromSource(msg.sender, _applicant);
     }
 
     function rejectApplication(ApplicationSource _source, address _applicant, string description) hasApprovalRights {
