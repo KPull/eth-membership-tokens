@@ -1,0 +1,14 @@
+{
+  "name": "eth-membership-lib",
+  "version": "1.0.0",
+  "description": "DApp library for the eth-membership contracts",
+  "main": "index.js",
+  "repository": "https://github.com/KPull/eth-membership-tokens",
+  "author": "Kyle Pullicino",
+  "license": "MIT",
+  "dependencies": {
+    "solc": "0.4.18",
+    "web3": "0.20.2",
+    "eth-membership-contracts": "file:../contracts"
+  }
+}
