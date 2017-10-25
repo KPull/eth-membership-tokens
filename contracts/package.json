@@ -1,0 +1,8 @@
+{
+  "name": "eth-membership-contracts",
+  "version": "1.0.0",
+  "description": "Ethereum Membership Smart contracts",
+  "repository": "https://github.com/KPull/eth-membership-tokens",
+  "author": "Kyle Pullicino",
+  "license": "MIT"
+}

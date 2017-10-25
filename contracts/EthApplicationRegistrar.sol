@@ -73,7 +73,7 @@ contract EthApplicationRegistrar is ApplicationSource, owned {
     }
 
     /**
-     * Purchase a single membership token using Ether. The funds will be placed in eschrow first and an application is opened.
+     * Purchase a single membership token using Ether. The funds will be placed in escrow first and an application is opened.
      * The application will be opened if the message contains the amount of Ether indicated by the price, another application is not already
      * open and any one of the following:
      * 1. The message sender (or payer) is not a member of the organisation already.
