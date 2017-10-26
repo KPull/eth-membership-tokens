@@ -4,5 +4,11 @@
   "description": "Ethereum Membership Smart contracts",
   "repository": "https://github.com/KPull/eth-membership-tokens",
   "author": "Kyle Pullicino",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "jsonify": "node jsonify.js"
+  },
+  "dependencies": {
+    "solc": "^0.4.18"
+  }
 }
