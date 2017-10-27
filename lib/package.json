@@ -7,8 +7,9 @@
   "author": "Kyle Pullicino",
   "license": "MIT",
   "dependencies": {
+    "eth-membership-contracts": "file:../contracts",
     "solc": "0.4.18",
-    "web3": "0.20.2",
-    "eth-membership-contracts": "file:../contracts"
+    "utf8": "^2.1.2",
+    "web3": "0.20.2"
   }
 }

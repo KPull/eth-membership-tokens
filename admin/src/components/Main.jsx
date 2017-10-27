@@ -4,7 +4,8 @@ require('bootstrap/dist/css/bootstrap.css');
 import React from 'react';
 import {Button, ButtonDropdown, Col, Container, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink, Row} from 'reactstrap';
 import PropTypes from 'prop-types';
-var Deploy = require('eth-membership-lib/Deploy');
+
+import { MembershipSystem } from "./Deploy"
 
 class AppComponent extends React.Component {
 
@@ -13,6 +14,7 @@ class AppComponent extends React.Component {
 
     this.toggle = this.toggle.bind(this);
 
+    console.log('context web3: ', context.web3);
     this.state = {
       dropdownOpen: false,
       accounts: context.web3.accounts,
@@ -20,12 +22,18 @@ class AppComponent extends React.Component {
     };
   }
 
+  switchAccount(account) {
+    console.log('Switching default account to ' + account);
+  }
+
   componentDidMount() {
+    const self = this;
     this.web3 = window.web3;
+    console.log('web3: ', this.web3);
   }
 
   deploy() {
-    Deploy.MembershipSystem('20000', '31557600');
+    MembershipSystem('20000', '31557600');
   }
 
   toggle() {
