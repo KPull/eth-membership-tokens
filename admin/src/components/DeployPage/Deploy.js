@@ -1472,7 +1472,7 @@ const ExpiringMembership = contractFactory('ExpiringMembership.sol', 'ExpiringMe
 const SingleApproval = contractFactory('SingleApproval.sol', 'SingleApproval');
 const EthApplicationRegistrar = contractFactory('EthApplicationRegistrar.sol', 'EthApplicationRegistrar');
 
-const MembershipSystem = function (priceInWei, durationInSeconds) {
+const MembershipSystem = function (priceInWei, durationInSeconds, personalDetailsUrl) {
   const web3 = getWeb3();
   const expiringMembership = ExpiringMembership();
   const singleApproval = SingleApproval();
@@ -1497,9 +1497,10 @@ const MembershipSystem = function (priceInWei, durationInSeconds) {
         members: expiringMembership.address,
         approval: singleApproval.address,
         purchaseUsingEther: ethApplicationRegistrar.address
-      }
+      },
+      personalDetailsUrl: personalDetailsUrl
     }
   })
 };
 
-export { EthApplicationRegistrar, SingleApproval, ExpiringMembership, MembershipSystem };
+export {EthApplicationRegistrar, SingleApproval, ExpiringMembership, MembershipSystem};

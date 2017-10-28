@@ -2,10 +2,9 @@ require('normalize.css/normalize.css');
 require('bootstrap/dist/css/bootstrap.css');
 
 import React from 'react';
-import {Button, ButtonDropdown, Col, Container, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink, Row} from 'reactstrap';
+import DeployPage from './DeployPage/DeployPage';
+import {ButtonDropdown, Col, Container, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink, Row} from 'reactstrap';
 import PropTypes from 'prop-types';
-
-import { MembershipSystem } from "./Deploy"
 
 class AppComponent extends React.Component {
 
@@ -18,7 +17,10 @@ class AppComponent extends React.Component {
     this.state = {
       dropdownOpen: false,
       accounts: context.web3.accounts,
-      selectedAccount: context.web3.selectedAccount
+      selectedAccount: context.web3.selectedAccount,
+      deployResult: null,
+      organization: null,
+      operation: null
     };
   }
 
@@ -30,10 +32,6 @@ class AppComponent extends React.Component {
     const self = this;
     this.web3 = window.web3;
     console.log('web3: ', this.web3);
-  }
-
-  deploy() {
-    MembershipSystem('20000', '31557600');
   }
 
   toggle() {
@@ -82,18 +80,9 @@ class AppComponent extends React.Component {
               <hr/>
             </Col>
             <Col md="9">
-              <h3>Deploy</h3>
-              <p>
-                This tool allows you to deploy a new Membership System of smart contracts onto the Ethereum platform.
-                Notice, that this will send a number of transactions to deploy the necessary smart contracts <strong>which will
-                cost ether</strong>. Make sure you <strong>review all transactions (and associated ether fees)</strong> before you submit
-                them onto the network.
-              </p>
-              <p className="text-center">
-                <Button onClick={this.deploy} color="primary">
-                  Deploy New Membership System
-                </Button>
-              </p>
+              <DeployPage onDeploy={() => {
+                console.log(arguments)
+              }}/>
             </Col>
           </Row>
         </Container>
