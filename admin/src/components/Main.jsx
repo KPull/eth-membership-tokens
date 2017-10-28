@@ -1,3 +1,5 @@
+import {WithdrawPage} from "./WithdrawPage/WithdrawPage";
+
 require('normalize.css/normalize.css');
 require('bootstrap/dist/css/bootstrap.css');
 
@@ -80,9 +82,12 @@ class AppComponent extends React.Component {
               <hr/>
             </Col>
             <Col md="9">
-              <DeployPage onDeploy={() => {
-                console.log(arguments)
-              }}/>
+              {/*<DeployPage onDeploy={() => {*/}
+                {/*console.log(arguments)*/}
+              {/*}}/>*/}
+              <WithdrawPage system={
+                JSON.parse(atob('eyJvd25lciI6IjB4OTRmMWUxOTg1NTEwYTc2YmMzZDUyY2MwODZiOTRhYzdhOTEwYWY4OSIsIm5ldHdvcmsiOiIzIiwiY29udHJhY3RzIjp7Im1lbWJlcnMiOiIweGE4MWI3Nzc2NmVkN2UyOTlmZmU1ZTRjMDU2MGU0N2QzZjAwM2I4N2EiLCJhcHByb3ZhbCI6IjB4OTBjNzZjMjlmNmM5NGQ0ZThjZGY2MzI5YTVkY2Q1ODY0Mzg2MWEyNiIsInB1cmNoYXNlVXNpbmdFdGhlciI6IjB4ZmEwMGIwZDFmYzM1NmFjYmNjZWQzY2EyNDcyZmQ0ZTlkZDEzYjg5OCJ9LCJwZXJzb25hbERldGFpbHNVcmwiOiJodHRwOi8vdGVzdC50ZXN0L3BlcnNvbmFsRGV0YWlscyJ9'))
+              } account={this.state.selectedAccount} />
             </Col>
           </Row>
         </Container>
