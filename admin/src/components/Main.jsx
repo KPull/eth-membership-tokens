@@ -7,6 +7,7 @@ import React from 'react';
 import DeployPage from './DeployPage/DeployPage';
 import {ButtonDropdown, Col, Container, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink, Row} from 'reactstrap';
 import PropTypes from 'prop-types';
+import ApprovalsPage from "./ApprovalsPage/ApprovalsPage";
 
 class AppComponent extends React.Component {
 
@@ -85,9 +86,12 @@ class AppComponent extends React.Component {
               {/*<DeployPage onDeploy={() => {*/}
                 {/*console.log(arguments)*/}
               {/*}}/>*/}
-              <WithdrawPage system={
-                JSON.parse(atob('eyJvd25lciI6IjB4OTRmMWUxOTg1NTEwYTc2YmMzZDUyY2MwODZiOTRhYzdhOTEwYWY4OSIsIm5ldHdvcmsiOiIzIiwiY29udHJhY3RzIjp7Im1lbWJlcnMiOiIweGE4MWI3Nzc2NmVkN2UyOTlmZmU1ZTRjMDU2MGU0N2QzZjAwM2I4N2EiLCJhcHByb3ZhbCI6IjB4OTBjNzZjMjlmNmM5NGQ0ZThjZGY2MzI5YTVkY2Q1ODY0Mzg2MWEyNiIsInB1cmNoYXNlVXNpbmdFdGhlciI6IjB4ZmEwMGIwZDFmYzM1NmFjYmNjZWQzY2EyNDcyZmQ0ZTlkZDEzYjg5OCJ9LCJwZXJzb25hbERldGFpbHNVcmwiOiJodHRwOi8vdGVzdC50ZXN0L3BlcnNvbmFsRGV0YWlscyJ9'))
-              } account={this.state.selectedAccount} />
+              {/*<WithdrawPage system={*/}
+                {/*JSON.parse(atob('eyJvd25lciI6IjB4OTRmMWUxOTg1NTEwYTc2YmMzZDUyY2MwODZiOTRhYzdhOTEwYWY4OSIsIm5ldHdvcmsiOiIzIiwiY29udHJhY3RzIjp7Im1lbWJlcnMiOiIweGE4MWI3Nzc2NmVkN2UyOTlmZmU1ZTRjMDU2MGU0N2QzZjAwM2I4N2EiLCJhcHByb3ZhbCI6IjB4OTBjNzZjMjlmNmM5NGQ0ZThjZGY2MzI5YTVkY2Q1ODY0Mzg2MWEyNiIsInB1cmNoYXNlVXNpbmdFdGhlciI6IjB4ZmEwMGIwZDFmYzM1NmFjYmNjZWQzY2EyNDcyZmQ0ZTlkZDEzYjg5OCJ9LCJwZXJzb25hbERldGFpbHNVcmwiOiJodHRwOi8vdGVzdC50ZXN0L3BlcnNvbmFsRGV0YWlscyJ9'))*/}
+              {/*} account={this.state.selectedAccount} />*/}
+              <ApprovalsPage system={
+                JSON.parse(atob('eyJvd25lciI6IjB4OTRmMWUxOTg1NTEwYTc2YmMzZDUyY2MwODZiOTRhYzdhOTEwYWY4OSIsIm5ldHdvcmsiOiIzIiwiY29udHJhY3RzIjp7Im1lbWJlcnMiOiIweGY3NmM2ZGIzOWE2MjYwY2EwMzliMGYyOGVjZTM4MzQ1MmM0NTIyZTQiLCJhcHByb3ZhbCI6IjB4NTNBMDhjNDgyMGRjNTI4NDg1RTRGZjg3NGQzQjRGQzM2MDMxNjJiOCIsInB1cmNoYXNlVXNpbmdFdGhlciI6IjB4NTRmNEE4QzUwMDM1NUE3ZjhGMDk1N0EwOEQ4Mjg0RDlGOTBCM2U3OCJ9LCJwZXJzb25hbERldGFpbHNVcmwiOiJodHRwOi8vdGVzdC50ZXN0L3BlcnNvbmFsRGV0YWlscyJ9'))
+              } />
             </Col>
           </Row>
         </Container>
