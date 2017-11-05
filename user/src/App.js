@@ -1,6 +1,21 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import {Button, Col, Container, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Row, Table} from "reactstrap";
+import {
+    Button,
+    Col,
+    Container,
+    Dropdown,
+    DropdownItem,
+    DropdownMenu,
+    DropdownToggle,
+    Form,
+    FormGroup,
+    Input,
+    Label,
+    Row,
+    Table
+} from "reactstrap";
+import {MembershipSystem} from "./MembershipSystem"
 
 function PreambleHeader({content}) {
     console.log('content: ', content);
@@ -33,7 +48,7 @@ function SystemInformation({contracts: {purchaseUsingEther, members, approval}, 
             </tr>
             <tr>
                 <td>Membership Price</td>
-                <td>{price}</td>
+                <td>{price} ether</td>
             </tr>
             <tr>
                 <td>Membership Length</td>
@@ -75,7 +90,7 @@ class AccountsDropdown extends Component {
     render() {
         return <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
             <DropdownToggle caret>
-                {this.props.coinbase}
+                {this.props.defaultAccount}
             </DropdownToggle>
             <DropdownMenu> {
                 this.props.accounts.map(account => {
@@ -89,13 +104,13 @@ class AccountsDropdown extends Component {
     }
 }
 
-function PurchaseMembershipSection({coinbase, accounts, onAccountChange, onPurchase}) {
+function PurchaseMembershipSection({defaultAccount, accounts, onAccountChange, onPurchase}) {
     return <Col md="6">
         <h2>Purchase Membership</h2>
         <p>Choose an Ethereum account to use when paying the membership fee. If you're using MetaMask, you need to switch the account from
             within MetaMask itself.</p>
         <div className="text-center">
-            <AccountsDropdown coinbase={coinbase} accounts={accounts} onAccountChange={onAccountChange}/>
+            <AccountsDropdown defaultAccount={defaultAccount} accounts={accounts} onAccountChange={onAccountChange}/>
             <br/>
             <Button color="primary" onClick={onPurchase}>
                 Purchase Membership
@@ -104,30 +119,105 @@ function PurchaseMembershipSection({coinbase, accounts, onAccountChange, onPurch
     </Col>
 }
 
+function PersonalDetailsSection({defaultAccount, personalDetailsUrl, onSubmit}) {
+    return <Col md="6">
+        <h2>Personal Details</h2>
+        <p>Supply your personal details. These will be sent privately to <strong>{personalDetailsUrl}</strong> for the organisation
+            administrators to approve your membership. To prove that you own the address sending the membership fee, you will be asked to
+            sign the supplied details by your wallet.
+        </p>
+        <Form>
+            <FormGroup>
+                <Label for="fullName">Full name:</Label>
+                <Input type="text" name="fullName" id="fullName"/>
+            </FormGroup>
+            <FormGroup>
+                <Label for="email">E-mail:</Label>
+                <Input type="text" name="email" id="email"/>
+            </FormGroup>
+            <Button color="primary" onClick={onSubmit}>
+                Submit Personal Details
+            </Button>
+        </Form>
+    </Col>
+}
+
 function SubscriptionForm(props) {
     return (
         <Row>
-            <PurchaseMembershipSection coinbase={props.coinbase}
+            <PurchaseMembershipSection defaultAccount={props.defaultAccount}
                                        accounts={props.accounts}
                                        onAccountChange={props.onAccountChange}
                                        onPurchase={props.onPurchase}/>
-            <Col md="6">
-                <h2>Personal Details</h2>
-            </Col>
+            <PersonalDetailsSection defaultAccount={props.defaultAccount}
+                                    personalDetailsUrl={props.personalDetailsUrl}
+                                    onSubmit={props.onSubmit}/>
         </Row>
     )
 }
 
 class App extends Component {
+
+    constructor(props) {
+        super(props);
+
+        const system = MembershipSystem(window.web3, props.system);
+        this.membershipSystem = system;
+
+        this.state = {
+            defaultAccount: '',
+            accounts: [],
+            price: '???',
+            duration: '???'
+        };
+    }
+
+    componentDidMount() {
+        this.setState({
+            price: this.membershipSystem.price(),
+            duration: this.membershipSystem.duration(),
+            accounts: this.membershipSystem.accounts(),
+            defaultAccount: this.membershipSystem.defaultAccount(),
+        });
+
+        this.membershipSystem.onPriceChange((price) => {
+            this.setState({
+                price
+            });
+        });
+
+        this.membershipSystem.onDurationChange((duration) => {
+            this.setState({
+                duration
+            });
+        });
+
+        this.membershipSystem.onAccountsChanged((accounts) => {
+            this.setState({
+                accounts
+            })
+        });
+
+        this.membershipSystem.onDefaultAccountChanged((defaultAccount) => {
+            this.setState({
+                defaultAccount
+            })
+        });
+    }
+
+    componentWillUnmount() {
+        this.membershipSystem.disconnect();
+    }
+
     render() {
         return (
             <Container>
-                <Preamble system={
-                    JSON.parse(atob('eyJuYW1lIjoiQml0bWFsdGEiLCJvd25lciI6IjB4OTRmMWUxOTg1NTEwYTc2YmMzZDUyY2MwODZiOTRhYzdhOTEwYWY4OSIsIm5ldHdvcmsiOiIzIiwiY29udHJhY3RzIjp7Im1lbWJlcnMiOiIweGY3NmM2ZGIzOWE2MjYwY2EwMzliMGYyOGVjZTM4MzQ1MmM0NTIyZTQiLCJhcHByb3ZhbCI6IjB4NTNBMDhjNDgyMGRjNTI4NDg1RTRGZjg3NGQzQjRGQzM2MDMxNjJiOCIsInB1cmNoYXNlVXNpbmdFdGhlciI6IjB4NTRmNEE4QzUwMDM1NUE3ZjhGMDk1N0EwOEQ4Mjg0RDlGOTBCM2U3OCJ9LCJwZXJzb25hbERldGFpbHNVcmwiOiJodHRwOi8vdGVzdC50ZXN0L3BlcnNvbmFsRGV0YWlscyJ9'))
-                } subscription={{price: '0.01 ether', duration: '1 year'}}/>
-                <SubscriptionForm coinbase={'0x123456789abcdef'} accounts={['0x123456789abcdef', '0x123456789fedcba']}
+                <Preamble system={this.membershipSystem.decoded()}
+                          subscription={{price: this.state.price, duration: this.state.duration}}/>
+                <SubscriptionForm defaultAccount={this.state.defaultAccount} accounts={this.state.accounts}
+                                  personalDetailsUrl={"http://test.test/personalDetails"}
                                   onAccountChange={(account) => console.log('account:', account)}
-                                  onPurchase={() => console.log('purchase')}/>
+                                  onPurchase={() => this.membershipSystem.startPurchase()}/>
             </Container>
         );
     }
