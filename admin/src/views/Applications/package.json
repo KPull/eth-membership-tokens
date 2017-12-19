@@ -1,0 +1,6 @@
+{
+  "name": "Applications",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Applications.js"
+}

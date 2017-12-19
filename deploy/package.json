@@ -1,0 +1,13 @@
+{
+  "name": "eth-membership-deploy",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "btoa": "^1.1.2",
+    "eth-membership-contracts": "file:../build",
+    "prompt": "^1.0.0",
+    "truffle-contract": "^3.0.1",
+    "web3": "0.20.2"
+  }
+}

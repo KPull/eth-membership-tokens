@@ -1,4 +1,4 @@
-pragma solidity ^0.4.13;
+pragma solidity ^0.4.18;
 
 import "./owned.sol";
 import "./ExpiringMembership.sol";
@@ -101,8 +101,8 @@ contract EthApplicationRegistrar is ApplicationSource, owned {
     /**
      * Lets anyone withdraw any funds due to them from this contract
      */
-    function withdraw(uint _amount) {
-        assert(_amount <= balance[msg.sender]);
+    function withdraw() {
+        var _amount = balance[msg.sender];
         balance[msg.sender] -= _amount;
         msg.sender.transfer(_amount);
         FundsWithdrawn(msg.sender, _amount, balance[msg.sender]);
@@ -131,6 +131,10 @@ contract EthApplicationRegistrar is ApplicationSource, owned {
         escrow[_applicant] -= paid;
         balance[_applicant] += paid;
         MembershipRejected(msg.sender, paid);
+    }
+
+    function() payable {
+        purchaseMembership();
     }
 
 }
