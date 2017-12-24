@@ -1,0 +1,7 @@
+{
+  "name": "eth-membership-contracts",
+  "version": "1.0.0",
+  "description": " Contracts that track and allow membership into an organisation",
+  "author": "Kyle Pullicino",
+  "homepage": "https://github.com/KPull/eth-membership-tokens"
+}
