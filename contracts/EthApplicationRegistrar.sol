@@ -81,16 +81,16 @@ contract EthApplicationRegistrar is ApplicationSource, owned {
      *    is closed to expire as defined by the isMembershipAllowed() function
      */
     function purchaseMembership() payable {
-        assert(isMembershipAllowed(msg.sender));
-        assert(!applications.hasOpenApplication(msg.sender));
-        assert(msg.value == price);
+        require(isMembershipAllowed(msg.sender));
+        require(!applications.hasOpenApplication(msg.sender));
+        require(msg.value == price);
         escrow[msg.sender] += price;
         applications.submitApplication(msg.sender);
         MembershipRequested(msg.sender, price);
     }
 
     function withdrawApplication() {
-        assert(applications.hasOpenApplication(msg.sender));
+        require(applications.hasOpenApplication(msg.sender));
         var paid = escrow[msg.sender];
         escrow[msg.sender] -= paid;
         balance[msg.sender] += paid;
@@ -99,13 +99,21 @@ contract EthApplicationRegistrar is ApplicationSource, owned {
     }
 
     /**
+     * Process the specified account's refund. This will send the ether owed to the specified account from this contract.
+     * This function can be executed by anyone but the refunded ether must always go to whoever it belongs to.
+     */
+    function processWithdrawalForAccount(address _account) {
+        var _amount = balance[_account];
+        balance[_account] -= _amount;
+        _account.transfer(_amount);
+        FundsWithdrawn(_account, _amount, balance[_account]);
+    }
+
+    /**
      * Lets anyone withdraw any funds due to them from this contract
      */
     function withdraw() {
-        var _amount = balance[msg.sender];
-        balance[msg.sender] -= _amount;
-        msg.sender.transfer(_amount);
-        FundsWithdrawn(msg.sender, _amount, balance[msg.sender]);
+        processWithdrawalForAccount(msg.sender);
     }
 
     /**
@@ -131,6 +139,10 @@ contract EthApplicationRegistrar is ApplicationSource, owned {
         escrow[_applicant] -= paid;
         balance[_applicant] += paid;
         MembershipRejected(msg.sender, paid);
+
+        // If the following operation fails because we run out of gas, for example,
+        // the applicant will have to process the refund themselves
+        this.call.gas(30000)("processWithdrawalForAccount", _applicant);
     }
 
     function() payable {
