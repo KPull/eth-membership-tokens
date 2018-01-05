@@ -32,12 +32,12 @@ contract SingleApproval is Application, owned {
     mapping(address => mapping(address => bool)) public applications;
 
     modifier hasApplicationRights() {
-        assert(sources[msg.sender] || msg.sender == owner);
+        require(sources[msg.sender] || msg.sender == owner);
         _;
     }
 
     modifier hasApprovalRights() {
-        assert(approvers[msg.sender] || msg.sender == owner);
+        require(approvers[msg.sender] || msg.sender == owner);
         _;
     }
 

@@ -50,7 +50,7 @@ contract EthApplicationRegistrar is ApplicationSource, owned {
     mapping(address => uint) public balance;
 
     modifier byApplicationsContract() {
-        assert(msg.sender == address(applications));
+        require(msg.sender == address(applications));
         _;
     }
 
@@ -132,6 +132,10 @@ contract EthApplicationRegistrar is ApplicationSource, owned {
         balance[owner] += paid;
         membershipContract.enroll(_applicant, duration);
         MembershipPurchased(_applicant, paid, duration, membershipContract.getMembershipExpiryDate(_applicant));
+
+        // If the following operation fails because we run out of gas, for example,
+        // the owner will have to withdraw the funds themselves
+        this.call.gas(30000)("processWithdrawalForAccount", owner);
     }
 
     function applicationRejected(address _applicant, address _approver) byApplicationsContract {
