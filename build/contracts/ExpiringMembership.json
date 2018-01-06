@@ -314,7 +314,7 @@
       "absolutePath": "/home/kyle/dev/sources/eth-membership/contracts/ExpiringMembership.sol",
       "exportedSymbols": {
         "ExpiringMembership": [
-          762
+          774
         ]
       }
     },
@@ -328,39 +328,39 @@
             ".18"
           ]
         },
-        "id": 475,
+        "id": 487,
         "name": "PragmaDirective",
         "src": "0:24:3"
       },
       {
         "attributes": {
-          "SourceUnit": 1282,
+          "SourceUnit": 1294,
           "absolutePath": "/home/kyle/dev/sources/eth-membership/contracts/owned.sol",
           "file": "./owned.sol",
-          "scope": 763,
+          "scope": 775,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 476,
+        "id": 488,
         "name": "ImportDirective",
         "src": "26:21:3"
       },
       {
         "attributes": {
           "contractDependencies": [
-            1281
+            1293
           ],
           "contractKind": "contract",
           "documentation": "This smart contract keeps whether addresses are part of an organisation. Membership will expire\nafter a certain time unless it is renewed.",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            762,
-            1281
+            774,
+            1293
           ],
           "name": "ExpiringMembership",
-          "scope": 763
+          "scope": 775
         },
         "children": [
           {
@@ -374,15 +374,15 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "owned",
-                  "referencedDeclaration": 1281,
+                  "referencedDeclaration": 1293,
                   "type": "contract owned"
                 },
-                "id": 477,
+                "id": 489,
                 "name": "UserDefinedTypeName",
                 "src": "233:5:3"
               }
             ],
-            "id": 478,
+            "id": 490,
             "name": "InheritanceSpecifier",
             "src": "233:5:3"
           },
@@ -399,7 +399,7 @@
                       "constant": false,
                       "indexed": true,
                       "name": "owner",
-                      "scope": 486,
+                      "scope": 498,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -412,12 +412,12 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 479,
+                        "id": 491,
                         "name": "ElementaryTypeName",
                         "src": "267:7:3"
                       }
                     ],
-                    "id": 480,
+                    "id": 492,
                     "name": "VariableDeclaration",
                     "src": "267:21:3"
                   },
@@ -426,7 +426,7 @@
                       "constant": false,
                       "indexed": true,
                       "name": "registrar",
-                      "scope": 486,
+                      "scope": 498,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -439,12 +439,12 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 481,
+                        "id": 493,
                         "name": "ElementaryTypeName",
                         "src": "290:7:3"
                       }
                     ],
-                    "id": 482,
+                    "id": 494,
                     "name": "VariableDeclaration",
                     "src": "290:25:3"
                   },
@@ -453,7 +453,7 @@
                       "constant": false,
                       "indexed": false,
                       "name": "description",
-                      "scope": 486,
+                      "scope": 498,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "string memory",
@@ -466,22 +466,22 @@
                           "name": "string",
                           "type": "string storage pointer"
                         },
-                        "id": 483,
+                        "id": 495,
                         "name": "ElementaryTypeName",
                         "src": "317:6:3"
                       }
                     ],
-                    "id": 484,
+                    "id": 496,
                     "name": "VariableDeclaration",
                     "src": "317:18:3"
                   }
                 ],
-                "id": 485,
+                "id": 497,
                 "name": "ParameterList",
                 "src": "266:70:3"
               }
             ],
-            "id": 486,
+            "id": 498,
             "name": "EventDefinition",
             "src": "246:91:3"
           },
@@ -498,7 +498,7 @@
                       "constant": false,
                       "indexed": true,
                       "name": "owner",
-                      "scope": 492,
+                      "scope": 504,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -511,12 +511,12 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 487,
+                        "id": 499,
                         "name": "ElementaryTypeName",
                         "src": "365:7:3"
                       }
                     ],
-                    "id": 488,
+                    "id": 500,
                     "name": "VariableDeclaration",
                     "src": "365:21:3"
                   },
@@ -525,7 +525,7 @@
                       "constant": false,
                       "indexed": true,
                       "name": "registrar",
-                      "scope": 492,
+                      "scope": 504,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -538,22 +538,22 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 489,
+                        "id": 501,
                         "name": "ElementaryTypeName",
                         "src": "388:7:3"
                       }
                     ],
-                    "id": 490,
+                    "id": 502,
                     "name": "VariableDeclaration",
                     "src": "388:25:3"
                   }
                 ],
-                "id": 491,
+                "id": 503,
                 "name": "ParameterList",
                 "src": "364:50:3"
               }
             ],
-            "id": 492,
+            "id": 504,
             "name": "EventDefinition",
             "src": "342:73:3"
           },
@@ -570,7 +570,7 @@
                       "constant": false,
                       "indexed": true,
                       "name": "member",
-                      "scope": 502,
+                      "scope": 514,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -583,12 +583,12 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 493,
+                        "id": 505,
                         "name": "ElementaryTypeName",
                         "src": "446:7:3"
                       }
                     ],
-                    "id": 494,
+                    "id": 506,
                     "name": "VariableDeclaration",
                     "src": "446:22:3"
                   },
@@ -597,7 +597,7 @@
                       "constant": false,
                       "indexed": true,
                       "name": "registrar",
-                      "scope": 502,
+                      "scope": 514,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -610,12 +610,12 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 495,
+                        "id": 507,
                         "name": "ElementaryTypeName",
                         "src": "470:7:3"
                       }
                     ],
-                    "id": 496,
+                    "id": 508,
                     "name": "VariableDeclaration",
                     "src": "470:25:3"
                   },
@@ -624,7 +624,7 @@
                       "constant": false,
                       "indexed": false,
                       "name": "duration",
-                      "scope": 502,
+                      "scope": 514,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -637,12 +637,12 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 497,
+                        "id": 509,
                         "name": "ElementaryTypeName",
                         "src": "497:4:3"
                       }
                     ],
-                    "id": 498,
+                    "id": 510,
                     "name": "VariableDeclaration",
                     "src": "497:13:3"
                   },
@@ -651,7 +651,7 @@
                       "constant": false,
                       "indexed": false,
                       "name": "expiryTimestamp",
-                      "scope": 502,
+                      "scope": 514,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -664,22 +664,22 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 499,
+                        "id": 511,
                         "name": "ElementaryTypeName",
                         "src": "512:4:3"
                       }
                     ],
-                    "id": 500,
+                    "id": 512,
                     "name": "VariableDeclaration",
                     "src": "512:20:3"
                   }
                 ],
-                "id": 501,
+                "id": 513,
                 "name": "ParameterList",
                 "src": "445:88:3"
               }
             ],
-            "id": 502,
+            "id": 514,
             "name": "EventDefinition",
             "src": "420:114:3"
           },
@@ -696,7 +696,7 @@
                       "constant": false,
                       "indexed": true,
                       "name": "member",
-                      "scope": 512,
+                      "scope": 524,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -709,12 +709,12 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 503,
+                        "id": 515,
                         "name": "ElementaryTypeName",
                         "src": "564:7:3"
                       }
                     ],
-                    "id": 504,
+                    "id": 516,
                     "name": "VariableDeclaration",
                     "src": "564:22:3"
                   },
@@ -723,7 +723,7 @@
                       "constant": false,
                       "indexed": true,
                       "name": "registrar",
-                      "scope": 512,
+                      "scope": 524,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -736,12 +736,12 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 505,
+                        "id": 517,
                         "name": "ElementaryTypeName",
                         "src": "588:7:3"
                       }
                     ],
-                    "id": 506,
+                    "id": 518,
                     "name": "VariableDeclaration",
                     "src": "588:25:3"
                   },
@@ -750,7 +750,7 @@
                       "constant": false,
                       "indexed": false,
                       "name": "duration",
-                      "scope": 512,
+                      "scope": 524,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -763,12 +763,12 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 507,
+                        "id": 519,
                         "name": "ElementaryTypeName",
                         "src": "615:4:3"
                       }
                     ],
-                    "id": 508,
+                    "id": 520,
                     "name": "VariableDeclaration",
                     "src": "615:13:3"
                   },
@@ -777,7 +777,7 @@
                       "constant": false,
                       "indexed": false,
                       "name": "expiryTimestamp",
-                      "scope": 512,
+                      "scope": 524,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -790,22 +790,22 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 509,
+                        "id": 521,
                         "name": "ElementaryTypeName",
                         "src": "630:4:3"
                       }
                     ],
-                    "id": 510,
+                    "id": 522,
                     "name": "VariableDeclaration",
                     "src": "630:20:3"
                   }
                 ],
-                "id": 511,
+                "id": 523,
                 "name": "ParameterList",
                 "src": "563:88:3"
               }
             ],
-            "id": 512,
+            "id": 524,
             "name": "EventDefinition",
             "src": "539:113:3"
           },
@@ -822,7 +822,7 @@
                       "constant": false,
                       "indexed": true,
                       "name": "member",
-                      "scope": 518,
+                      "scope": 530,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -835,12 +835,12 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 513,
+                        "id": 525,
                         "name": "ElementaryTypeName",
                         "src": "681:7:3"
                       }
                     ],
-                    "id": 514,
+                    "id": 526,
                     "name": "VariableDeclaration",
                     "src": "681:22:3"
                   },
@@ -849,7 +849,7 @@
                       "constant": false,
                       "indexed": true,
                       "name": "revoker",
-                      "scope": 518,
+                      "scope": 530,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -862,22 +862,22 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 515,
+                        "id": 527,
                         "name": "ElementaryTypeName",
                         "src": "705:7:3"
                       }
                     ],
-                    "id": 516,
+                    "id": 528,
                     "name": "VariableDeclaration",
                     "src": "705:23:3"
                   }
                 ],
-                "id": 517,
+                "id": 529,
                 "name": "ParameterList",
                 "src": "680:49:3"
               }
             ],
-            "id": 518,
+            "id": 530,
             "name": "EventDefinition",
             "src": "657:73:3"
           },
@@ -885,7 +885,7 @@
             "attributes": {
               "canonicalName": "ExpiringMembership.Membership",
               "name": "Membership",
-              "scope": 762,
+              "scope": 774,
               "visibility": "public"
             },
             "children": [
@@ -893,7 +893,7 @@
                 "attributes": {
                   "constant": false,
                   "name": "expiryTimestamp",
-                  "scope": 521,
+                  "scope": 533,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -906,17 +906,17 @@
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 519,
+                    "id": 531,
                     "name": "ElementaryTypeName",
                     "src": "892:4:3"
                   }
                 ],
-                "id": 520,
+                "id": 532,
                 "name": "VariableDeclaration",
                 "src": "892:20:3"
               }
             ],
-            "id": 521,
+            "id": 533,
             "name": "StructDefinition",
             "src": "864:55:3"
           },
@@ -924,7 +924,7 @@
             "attributes": {
               "constant": false,
               "name": "isRegistrar",
-              "scope": 762,
+              "scope": 774,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(address => bool)",
@@ -942,7 +942,7 @@
                       "name": "address",
                       "type": "address"
                     },
-                    "id": 522,
+                    "id": 534,
                     "name": "ElementaryTypeName",
                     "src": "1118:7:3"
                   },
@@ -951,17 +951,17 @@
                       "name": "bool",
                       "type": "bool"
                     },
-                    "id": 523,
+                    "id": 535,
                     "name": "ElementaryTypeName",
                     "src": "1129:4:3"
                   }
                 ],
-                "id": 524,
+                "id": 536,
                 "name": "Mapping",
                 "src": "1110:24:3"
               }
             ],
-            "id": 525,
+            "id": 537,
             "name": "VariableDeclaration",
             "src": "1110:43:3"
           },
@@ -969,7 +969,7 @@
             "attributes": {
               "constant": false,
               "name": "members",
-              "scope": 762,
+              "scope": 774,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(address => struct ExpiringMembership.Membership storage ref)",
@@ -987,7 +987,7 @@
                       "name": "address",
                       "type": "address"
                     },
-                    "id": 526,
+                    "id": 538,
                     "name": "ElementaryTypeName",
                     "src": "1232:7:3"
                   },
@@ -995,20 +995,20 @@
                     "attributes": {
                       "contractScope": null,
                       "name": "Membership",
-                      "referencedDeclaration": 521,
+                      "referencedDeclaration": 533,
                       "type": "struct ExpiringMembership.Membership storage pointer"
                     },
-                    "id": 527,
+                    "id": 539,
                     "name": "UserDefinedTypeName",
                     "src": "1243:10:3"
                   }
                 ],
-                "id": 528,
+                "id": 540,
                 "name": "Mapping",
                 "src": "1224:30:3"
               }
             ],
-            "id": 529,
+            "id": 541,
             "name": "VariableDeclaration",
             "src": "1224:45:3"
           },
@@ -1025,7 +1025,7 @@
                   ]
                 },
                 "children": [],
-                "id": 530,
+                "id": 542,
                 "name": "ParameterList",
                 "src": "1408:2:3"
               },
@@ -1059,11 +1059,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1296,
+                              "referencedDeclaration": 1308,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
-                            "id": 531,
+                            "id": 543,
                             "name": "Identifier",
                             "src": "1421:7:3"
                           },
@@ -1115,16 +1115,16 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 1293,
+                                          "referencedDeclaration": 1305,
                                           "type": "msg",
                                           "value": "msg"
                                         },
-                                        "id": 532,
+                                        "id": 544,
                                         "name": "Identifier",
                                         "src": "1429:3:3"
                                       }
                                     ],
-                                    "id": 533,
+                                    "id": 545,
                                     "name": "MemberAccess",
                                     "src": "1429:10:3"
                                   },
@@ -1134,16 +1134,16 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 1251,
+                                      "referencedDeclaration": 1263,
                                       "type": "address",
                                       "value": "owner"
                                     },
-                                    "id": 534,
+                                    "id": 546,
                                     "name": "Identifier",
                                     "src": "1443:5:3"
                                   }
                                 ],
-                                "id": 535,
+                                "id": 547,
                                 "name": "BinaryOperation",
                                 "src": "1429:19:3"
                               },
@@ -1163,11 +1163,11 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 525,
+                                      "referencedDeclaration": 537,
                                       "type": "mapping(address => bool)",
                                       "value": "isRegistrar"
                                     },
-                                    "id": 536,
+                                    "id": 548,
                                     "name": "Identifier",
                                     "src": "1452:11:3"
                                   },
@@ -1189,51 +1189,51 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 1293,
+                                          "referencedDeclaration": 1305,
                                           "type": "msg",
                                           "value": "msg"
                                         },
-                                        "id": 537,
+                                        "id": 549,
                                         "name": "Identifier",
                                         "src": "1464:3:3"
                                       }
                                     ],
-                                    "id": 538,
+                                    "id": 550,
                                     "name": "MemberAccess",
                                     "src": "1464:10:3"
                                   }
                                 ],
-                                "id": 539,
+                                "id": 551,
                                 "name": "IndexAccess",
                                 "src": "1452:23:3"
                               }
                             ],
-                            "id": 540,
+                            "id": 552,
                             "name": "BinaryOperation",
                             "src": "1429:46:3"
                           }
                         ],
-                        "id": 541,
+                        "id": 553,
                         "name": "FunctionCall",
                         "src": "1421:55:3"
                       }
                     ],
-                    "id": 542,
+                    "id": 554,
                     "name": "ExpressionStatement",
                     "src": "1421:55:3"
                   },
                   {
-                    "id": 543,
+                    "id": 555,
                     "name": "PlaceholderStatement",
                     "src": "1486:1:3"
                   }
                 ],
-                "id": 544,
+                "id": 556,
                 "name": "Block",
                 "src": "1411:83:3"
               }
             ],
-            "id": 545,
+            "id": 557,
             "name": "ModifierDefinition",
             "src": "1374:120:3"
           },
@@ -1249,7 +1249,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_member",
-                      "scope": 557,
+                      "scope": 569,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -1262,17 +1262,17 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 546,
+                        "id": 558,
                         "name": "ElementaryTypeName",
                         "src": "1594:7:3"
                       }
                     ],
-                    "id": 547,
+                    "id": 559,
                     "name": "VariableDeclaration",
                     "src": "1594:15:3"
                   }
                 ],
-                "id": 548,
+                "id": 560,
                 "name": "ParameterList",
                 "src": "1593:17:3"
               },
@@ -1306,11 +1306,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1296,
+                              "referencedDeclaration": 1308,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
-                            "id": 549,
+                            "id": 561,
                             "name": "Identifier",
                             "src": "1621:7:3"
                           },
@@ -1340,11 +1340,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 748,
+                                  "referencedDeclaration": 760,
                                   "type": "function (address) view returns (bool)",
                                   "value": "isMember"
                                 },
-                                "id": 550,
+                                "id": 562,
                                 "name": "Identifier",
                                 "src": "1629:8:3"
                               },
@@ -1354,41 +1354,41 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 547,
+                                  "referencedDeclaration": 559,
                                   "type": "address",
                                   "value": "_member"
                                 },
-                                "id": 551,
+                                "id": 563,
                                 "name": "Identifier",
                                 "src": "1638:7:3"
                               }
                             ],
-                            "id": 552,
+                            "id": 564,
                             "name": "FunctionCall",
                             "src": "1629:17:3"
                           }
                         ],
-                        "id": 553,
+                        "id": 565,
                         "name": "FunctionCall",
                         "src": "1621:26:3"
                       }
                     ],
-                    "id": 554,
+                    "id": 566,
                     "name": "ExpressionStatement",
                     "src": "1621:26:3"
                   },
                   {
-                    "id": 555,
+                    "id": 567,
                     "name": "PlaceholderStatement",
                     "src": "1657:1:3"
                   }
                 ],
-                "id": 556,
+                "id": 568,
                 "name": "Block",
                 "src": "1611:54:3"
               }
             ],
-            "id": 557,
+            "id": 569,
             "name": "ModifierDefinition",
             "src": "1578:87:3"
           },
@@ -1402,7 +1402,7 @@
               ],
               "name": "ExpiringMembership",
               "payable": false,
-              "scope": 762,
+              "scope": 774,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -1415,7 +1415,7 @@
                   ]
                 },
                 "children": [],
-                "id": 558,
+                "id": 570,
                 "name": "ParameterList",
                 "src": "1698:2:3"
               },
@@ -1426,7 +1426,7 @@
                   ]
                 },
                 "children": [],
-                "id": 559,
+                "id": 571,
                 "name": "ParameterList",
                 "src": "1701:0:3"
               },
@@ -1451,11 +1451,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1251,
+                              "referencedDeclaration": 1263,
                               "type": "address",
                               "value": "owner"
                             },
-                            "id": 560,
+                            "id": 572,
                             "name": "Identifier",
                             "src": "1711:5:3"
                           },
@@ -1477,36 +1477,36 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1293,
+                                  "referencedDeclaration": 1305,
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 561,
+                                "id": 573,
                                 "name": "Identifier",
                                 "src": "1719:3:3"
                               }
                             ],
-                            "id": 562,
+                            "id": 574,
                             "name": "MemberAccess",
                             "src": "1719:10:3"
                           }
                         ],
-                        "id": 563,
+                        "id": 575,
                         "name": "Assignment",
                         "src": "1711:18:3"
                       }
                     ],
-                    "id": 564,
+                    "id": 576,
                     "name": "ExpressionStatement",
                     "src": "1711:18:3"
                   }
                 ],
-                "id": 565,
+                "id": 577,
                 "name": "Block",
                 "src": "1701:35:3"
               }
             ],
-            "id": 566,
+            "id": 578,
             "name": "FunctionDefinition",
             "src": "1671:65:3"
           },
@@ -1517,7 +1517,7 @@
               "isConstructor": false,
               "name": "addRegistrar",
               "payable": false,
-              "scope": 762,
+              "scope": 774,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -1529,7 +1529,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_registrar",
-                      "scope": 595,
+                      "scope": 607,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -1542,12 +1542,12 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 567,
+                        "id": 579,
                         "name": "ElementaryTypeName",
                         "src": "1903:7:3"
                       }
                     ],
-                    "id": 568,
+                    "id": 580,
                     "name": "VariableDeclaration",
                     "src": "1903:18:3"
                   },
@@ -1555,7 +1555,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "description",
-                      "scope": 595,
+                      "scope": 607,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "string memory",
@@ -1568,17 +1568,17 @@
                           "name": "string",
                           "type": "string storage pointer"
                         },
-                        "id": 569,
+                        "id": 581,
                         "name": "ElementaryTypeName",
                         "src": "1923:6:3"
                       }
                     ],
-                    "id": 570,
+                    "id": 582,
                     "name": "VariableDeclaration",
                     "src": "1923:18:3"
                   }
                 ],
-                "id": 571,
+                "id": 583,
                 "name": "ParameterList",
                 "src": "1902:40:3"
               },
@@ -1589,7 +1589,7 @@
                   ]
                 },
                 "children": [],
-                "id": 574,
+                "id": 586,
                 "name": "ParameterList",
                 "src": "1951:0:3"
               },
@@ -1606,16 +1606,16 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 1262,
+                      "referencedDeclaration": 1274,
                       "type": "modifier ()",
                       "value": "byOwner"
                     },
-                    "id": 572,
+                    "id": 584,
                     "name": "Identifier",
                     "src": "1943:7:3"
                   }
                 ],
-                "id": 573,
+                "id": 585,
                 "name": "ModifierInvocation",
                 "src": "1943:7:3"
               },
@@ -1642,11 +1642,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 525,
+                              "referencedDeclaration": 537,
                               "type": "mapping(address => bool)",
                               "value": "isRegistrar"
                             },
-                            "id": 575,
+                            "id": 587,
                             "name": "Identifier",
                             "src": "1965:11:3"
                           },
@@ -1656,16 +1656,16 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 568,
+                              "referencedDeclaration": 580,
                               "type": "address",
                               "value": "_registrar"
                             },
-                            "id": 576,
+                            "id": 588,
                             "name": "Identifier",
                             "src": "1977:10:3"
                           }
                         ],
-                        "id": 577,
+                        "id": 589,
                         "name": "IndexAccess",
                         "src": "1965:23:3"
                       },
@@ -1674,19 +1674,19 @@
                           {
                             "attributes": {
                               "expression": null,
-                              "functionReturnParameters": 574
+                              "functionReturnParameters": 586
                             },
-                            "id": 578,
+                            "id": 590,
                             "name": "Return",
                             "src": "2004:7:3"
                           }
                         ],
-                        "id": 579,
+                        "id": 591,
                         "name": "Block",
                         "src": "1990:31:3"
                       }
                     ],
-                    "id": 580,
+                    "id": 592,
                     "name": "IfStatement",
                     "src": "1961:60:3"
                   },
@@ -1719,11 +1719,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 525,
+                                  "referencedDeclaration": 537,
                                   "type": "mapping(address => bool)",
                                   "value": "isRegistrar"
                                 },
-                                "id": 581,
+                                "id": 593,
                                 "name": "Identifier",
                                 "src": "2030:11:3"
                               },
@@ -1733,16 +1733,16 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 568,
+                                  "referencedDeclaration": 580,
                                   "type": "address",
                                   "value": "_registrar"
                                 },
-                                "id": 582,
+                                "id": 594,
                                 "name": "Identifier",
                                 "src": "2042:10:3"
                               }
                             ],
-                            "id": 583,
+                            "id": 595,
                             "name": "IndexAccess",
                             "src": "2030:23:3"
                           },
@@ -1759,17 +1759,17 @@
                               "type": "bool",
                               "value": "true"
                             },
-                            "id": 584,
+                            "id": 596,
                             "name": "Literal",
                             "src": "2056:4:3"
                           }
                         ],
-                        "id": 585,
+                        "id": 597,
                         "name": "Assignment",
                         "src": "2030:30:3"
                       }
                     ],
-                    "id": 586,
+                    "id": 598,
                     "name": "ExpressionStatement",
                     "src": "2030:30:3"
                   },
@@ -1809,11 +1809,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 486,
+                              "referencedDeclaration": 498,
                               "type": "function (address,address,string memory)",
                               "value": "RegistrarAdded"
                             },
-                            "id": 587,
+                            "id": 599,
                             "name": "Identifier",
                             "src": "2070:14:3"
                           },
@@ -1835,16 +1835,16 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1293,
+                                  "referencedDeclaration": 1305,
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 588,
+                                "id": 600,
                                 "name": "Identifier",
                                 "src": "2085:3:3"
                               }
                             ],
-                            "id": 589,
+                            "id": 601,
                             "name": "MemberAccess",
                             "src": "2085:10:3"
                           },
@@ -1854,11 +1854,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 568,
+                              "referencedDeclaration": 580,
                               "type": "address",
                               "value": "_registrar"
                             },
-                            "id": 590,
+                            "id": 602,
                             "name": "Identifier",
                             "src": "2097:10:3"
                           },
@@ -1868,31 +1868,31 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 570,
+                              "referencedDeclaration": 582,
                               "type": "string memory",
                               "value": "description"
                             },
-                            "id": 591,
+                            "id": 603,
                             "name": "Identifier",
                             "src": "2109:11:3"
                           }
                         ],
-                        "id": 592,
+                        "id": 604,
                         "name": "FunctionCall",
                         "src": "2070:51:3"
                       }
                     ],
-                    "id": 593,
+                    "id": 605,
                     "name": "ExpressionStatement",
                     "src": "2070:51:3"
                   }
                 ],
-                "id": 594,
+                "id": 606,
                 "name": "Block",
                 "src": "1951:177:3"
               }
             ],
-            "id": 595,
+            "id": 607,
             "name": "FunctionDefinition",
             "src": "1881:247:3"
           },
@@ -1903,7 +1903,7 @@
               "isConstructor": false,
               "name": "removeRegistrar",
               "payable": false,
-              "scope": 762,
+              "scope": 774,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -1915,7 +1915,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_registrar",
-                      "scope": 622,
+                      "scope": 634,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -1928,17 +1928,17 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 596,
+                        "id": 608,
                         "name": "ElementaryTypeName",
                         "src": "2234:7:3"
                       }
                     ],
-                    "id": 597,
+                    "id": 609,
                     "name": "VariableDeclaration",
                     "src": "2234:18:3"
                   }
                 ],
-                "id": 598,
+                "id": 610,
                 "name": "ParameterList",
                 "src": "2233:20:3"
               },
@@ -1949,7 +1949,7 @@
                   ]
                 },
                 "children": [],
-                "id": 601,
+                "id": 613,
                 "name": "ParameterList",
                 "src": "2262:0:3"
               },
@@ -1966,16 +1966,16 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 1262,
+                      "referencedDeclaration": 1274,
                       "type": "modifier ()",
                       "value": "byOwner"
                     },
-                    "id": 599,
+                    "id": 611,
                     "name": "Identifier",
                     "src": "2254:7:3"
                   }
                 ],
-                "id": 600,
+                "id": 612,
                 "name": "ModifierInvocation",
                 "src": "2254:7:3"
               },
@@ -2014,11 +2014,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 525,
+                                  "referencedDeclaration": 537,
                                   "type": "mapping(address => bool)",
                                   "value": "isRegistrar"
                                 },
-                                "id": 602,
+                                "id": 614,
                                 "name": "Identifier",
                                 "src": "2277:11:3"
                               },
@@ -2028,21 +2028,21 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 597,
+                                  "referencedDeclaration": 609,
                                   "type": "address",
                                   "value": "_registrar"
                                 },
-                                "id": 603,
+                                "id": 615,
                                 "name": "Identifier",
                                 "src": "2289:10:3"
                               }
                             ],
-                            "id": 604,
+                            "id": 616,
                             "name": "IndexAccess",
                             "src": "2277:23:3"
                           }
                         ],
-                        "id": 605,
+                        "id": 617,
                         "name": "UnaryOperation",
                         "src": "2276:24:3"
                       },
@@ -2051,19 +2051,19 @@
                           {
                             "attributes": {
                               "expression": null,
-                              "functionReturnParameters": 601
+                              "functionReturnParameters": 613
                             },
-                            "id": 606,
+                            "id": 618,
                             "name": "Return",
                             "src": "2316:7:3"
                           }
                         ],
-                        "id": 607,
+                        "id": 619,
                         "name": "Block",
                         "src": "2302:31:3"
                       }
                     ],
-                    "id": 608,
+                    "id": 620,
                     "name": "IfStatement",
                     "src": "2272:61:3"
                   },
@@ -2096,11 +2096,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 525,
+                                  "referencedDeclaration": 537,
                                   "type": "mapping(address => bool)",
                                   "value": "isRegistrar"
                                 },
-                                "id": 609,
+                                "id": 621,
                                 "name": "Identifier",
                                 "src": "2342:11:3"
                               },
@@ -2110,16 +2110,16 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 597,
+                                  "referencedDeclaration": 609,
                                   "type": "address",
                                   "value": "_registrar"
                                 },
-                                "id": 610,
+                                "id": 622,
                                 "name": "Identifier",
                                 "src": "2354:10:3"
                               }
                             ],
-                            "id": 611,
+                            "id": 623,
                             "name": "IndexAccess",
                             "src": "2342:23:3"
                           },
@@ -2136,17 +2136,17 @@
                               "type": "bool",
                               "value": "false"
                             },
-                            "id": 612,
+                            "id": 624,
                             "name": "Literal",
                             "src": "2368:5:3"
                           }
                         ],
-                        "id": 613,
+                        "id": 625,
                         "name": "Assignment",
                         "src": "2342:31:3"
                       }
                     ],
-                    "id": 614,
+                    "id": 626,
                     "name": "ExpressionStatement",
                     "src": "2342:31:3"
                   },
@@ -2182,11 +2182,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 492,
+                              "referencedDeclaration": 504,
                               "type": "function (address,address)",
                               "value": "RegistrarRemoved"
                             },
-                            "id": 615,
+                            "id": 627,
                             "name": "Identifier",
                             "src": "2383:16:3"
                           },
@@ -2208,16 +2208,16 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1293,
+                                  "referencedDeclaration": 1305,
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 616,
+                                "id": 628,
                                 "name": "Identifier",
                                 "src": "2400:3:3"
                               }
                             ],
-                            "id": 617,
+                            "id": 629,
                             "name": "MemberAccess",
                             "src": "2400:10:3"
                           },
@@ -2227,31 +2227,31 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 597,
+                              "referencedDeclaration": 609,
                               "type": "address",
                               "value": "_registrar"
                             },
-                            "id": 618,
+                            "id": 630,
                             "name": "Identifier",
                             "src": "2412:10:3"
                           }
                         ],
-                        "id": 619,
+                        "id": 631,
                         "name": "FunctionCall",
                         "src": "2383:40:3"
                       }
                     ],
-                    "id": 620,
+                    "id": 632,
                     "name": "ExpressionStatement",
                     "src": "2383:40:3"
                   }
                 ],
-                "id": 621,
+                "id": 633,
                 "name": "Block",
                 "src": "2262:168:3"
               }
             ],
-            "id": 622,
+            "id": 634,
             "name": "FunctionDefinition",
             "src": "2209:221:3"
           },
@@ -2262,7 +2262,7 @@
               "isConstructor": false,
               "name": "enroll",
               "payable": false,
-              "scope": 762,
+              "scope": 774,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -2274,7 +2274,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_member",
-                      "scope": 648,
+                      "scope": 660,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -2287,12 +2287,12 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 623,
+                        "id": 635,
                         "name": "ElementaryTypeName",
                         "src": "2790:7:3"
                       }
                     ],
-                    "id": 624,
+                    "id": 636,
                     "name": "VariableDeclaration",
                     "src": "2790:15:3"
                   },
@@ -2300,7 +2300,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "duration",
-                      "scope": 648,
+                      "scope": 660,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -2313,17 +2313,17 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 625,
+                        "id": 637,
                         "name": "ElementaryTypeName",
                         "src": "2807:4:3"
                       }
                     ],
-                    "id": 626,
+                    "id": 638,
                     "name": "VariableDeclaration",
                     "src": "2807:13:3"
                   }
                 ],
-                "id": 627,
+                "id": 639,
                 "name": "ParameterList",
                 "src": "2789:32:3"
               },
@@ -2334,7 +2334,7 @@
                   ]
                 },
                 "children": [],
-                "id": 630,
+                "id": 642,
                 "name": "ParameterList",
                 "src": "2848:0:3"
               },
@@ -2351,16 +2351,16 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 545,
+                      "referencedDeclaration": 557,
                       "type": "modifier ()",
                       "value": "hasRegistrationPrivileges"
                     },
-                    "id": 628,
+                    "id": 640,
                     "name": "Identifier",
                     "src": "2822:25:3"
                   }
                 ],
-                "id": 629,
+                "id": 641,
                 "name": "ModifierInvocation",
                 "src": "2822:25:3"
               },
@@ -2394,11 +2394,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 748,
+                              "referencedDeclaration": 760,
                               "type": "function (address) view returns (bool)",
                               "value": "isMember"
                             },
-                            "id": 631,
+                            "id": 643,
                             "name": "Identifier",
                             "src": "2862:8:3"
                           },
@@ -2408,16 +2408,16 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 624,
+                              "referencedDeclaration": 636,
                               "type": "address",
                               "value": "_member"
                             },
-                            "id": 632,
+                            "id": 644,
                             "name": "Identifier",
                             "src": "2871:7:3"
                           }
                         ],
-                        "id": 633,
+                        "id": 645,
                         "name": "FunctionCall",
                         "src": "2862:17:3"
                       },
@@ -2455,11 +2455,11 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 706,
+                                      "referencedDeclaration": 718,
                                       "type": "function (address,uint256)",
                                       "value": "extendMembership"
                                     },
-                                    "id": 634,
+                                    "id": 646,
                                     "name": "Identifier",
                                     "src": "2894:16:3"
                                   },
@@ -2469,11 +2469,11 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 624,
+                                      "referencedDeclaration": 636,
                                       "type": "address",
                                       "value": "_member"
                                     },
-                                    "id": 635,
+                                    "id": 647,
                                     "name": "Identifier",
                                     "src": "2911:7:3"
                                   },
@@ -2483,26 +2483,26 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 626,
+                                      "referencedDeclaration": 638,
                                       "type": "uint256",
                                       "value": "duration"
                                     },
-                                    "id": 636,
+                                    "id": 648,
                                     "name": "Identifier",
                                     "src": "2920:8:3"
                                   }
                                 ],
-                                "id": 637,
+                                "id": 649,
                                 "name": "FunctionCall",
                                 "src": "2894:35:3"
                               }
                             ],
-                            "id": 638,
+                            "id": 650,
                             "name": "ExpressionStatement",
                             "src": "2894:35:3"
                           }
                         ],
-                        "id": 639,
+                        "id": 651,
                         "name": "Block",
                         "src": "2881:59:3"
                       },
@@ -2540,11 +2540,11 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 734,
+                                      "referencedDeclaration": 746,
                                       "type": "function (address,uint256)",
                                       "value": "registerNewMember"
                                     },
-                                    "id": 640,
+                                    "id": 652,
                                     "name": "Identifier",
                                     "src": "2959:17:3"
                                   },
@@ -2554,11 +2554,11 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 624,
+                                      "referencedDeclaration": 636,
                                       "type": "address",
                                       "value": "_member"
                                     },
-                                    "id": 641,
+                                    "id": 653,
                                     "name": "Identifier",
                                     "src": "2977:7:3"
                                   },
@@ -2568,41 +2568,41 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 626,
+                                      "referencedDeclaration": 638,
                                       "type": "uint256",
                                       "value": "duration"
                                     },
-                                    "id": 642,
+                                    "id": 654,
                                     "name": "Identifier",
                                     "src": "2986:8:3"
                                   }
                                 ],
-                                "id": 643,
+                                "id": 655,
                                 "name": "FunctionCall",
                                 "src": "2959:36:3"
                               }
                             ],
-                            "id": 644,
+                            "id": 656,
                             "name": "ExpressionStatement",
                             "src": "2959:36:3"
                           }
                         ],
-                        "id": 645,
+                        "id": 657,
                         "name": "Block",
                         "src": "2946:60:3"
                       }
                     ],
-                    "id": 646,
+                    "id": 658,
                     "name": "IfStatement",
                     "src": "2858:148:3"
                   }
                 ],
-                "id": 647,
+                "id": 659,
                 "name": "Block",
                 "src": "2848:164:3"
               }
             ],
-            "id": 648,
+            "id": 660,
             "name": "FunctionDefinition",
             "src": "2774:238:3"
           },
@@ -2613,7 +2613,7 @@
               "isConstructor": false,
               "name": "revoke",
               "payable": false,
-              "scope": 762,
+              "scope": 774,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -2625,7 +2625,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_member",
-                      "scope": 675,
+                      "scope": 687,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -2638,17 +2638,17 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 649,
+                        "id": 661,
                         "name": "ElementaryTypeName",
                         "src": "3180:7:3"
                       }
                     ],
-                    "id": 650,
+                    "id": 662,
                     "name": "VariableDeclaration",
                     "src": "3180:15:3"
                   }
                 ],
-                "id": 651,
+                "id": 663,
                 "name": "ParameterList",
                 "src": "3179:17:3"
               },
@@ -2659,7 +2659,7 @@
                   ]
                 },
                 "children": [],
-                "id": 654,
+                "id": 666,
                 "name": "ParameterList",
                 "src": "3223:0:3"
               },
@@ -2676,16 +2676,16 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 545,
+                      "referencedDeclaration": 557,
                       "type": "modifier ()",
                       "value": "hasRegistrationPrivileges"
                     },
-                    "id": 652,
+                    "id": 664,
                     "name": "Identifier",
                     "src": "3197:25:3"
                   }
                 ],
-                "id": 653,
+                "id": 665,
                 "name": "ModifierInvocation",
                 "src": "3197:25:3"
               },
@@ -2719,11 +2719,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1284,
+                              "referencedDeclaration": 1296,
                               "type": "function (bool) pure",
                               "value": "assert"
                             },
-                            "id": 655,
+                            "id": 667,
                             "name": "Identifier",
                             "src": "3233:6:3"
                           },
@@ -2753,11 +2753,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 748,
+                                  "referencedDeclaration": 760,
                                   "type": "function (address) view returns (bool)",
                                   "value": "isMember"
                                 },
-                                "id": 656,
+                                "id": 668,
                                 "name": "Identifier",
                                 "src": "3240:8:3"
                               },
@@ -2767,26 +2767,26 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 650,
+                                  "referencedDeclaration": 662,
                                   "type": "address",
                                   "value": "_member"
                                 },
-                                "id": 657,
+                                "id": 669,
                                 "name": "Identifier",
                                 "src": "3249:7:3"
                               }
                             ],
-                            "id": 658,
+                            "id": 670,
                             "name": "FunctionCall",
                             "src": "3240:17:3"
                           }
                         ],
-                        "id": 659,
+                        "id": 671,
                         "name": "FunctionCall",
                         "src": "3233:25:3"
                       }
                     ],
-                    "id": 660,
+                    "id": 672,
                     "name": "ExpressionStatement",
                     "src": "3233:25:3"
                   },
@@ -2811,7 +2811,7 @@
                               "isPure": false,
                               "lValueRequested": true,
                               "member_name": "expiryTimestamp",
-                              "referencedDeclaration": 520,
+                              "referencedDeclaration": 532,
                               "type": "uint256"
                             },
                             "children": [
@@ -2831,11 +2831,11 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 529,
+                                      "referencedDeclaration": 541,
                                       "type": "mapping(address => struct ExpiringMembership.Membership storage ref)",
                                       "value": "members"
                                     },
-                                    "id": 661,
+                                    "id": 673,
                                     "name": "Identifier",
                                     "src": "3268:7:3"
                                   },
@@ -2845,21 +2845,21 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 650,
+                                      "referencedDeclaration": 662,
                                       "type": "address",
                                       "value": "_member"
                                     },
-                                    "id": 662,
+                                    "id": 674,
                                     "name": "Identifier",
                                     "src": "3276:7:3"
                                   }
                                 ],
-                                "id": 663,
+                                "id": 675,
                                 "name": "IndexAccess",
                                 "src": "3268:16:3"
                               }
                             ],
-                            "id": 664,
+                            "id": 676,
                             "name": "MemberAccess",
                             "src": "3268:32:3"
                           },
@@ -2869,21 +2869,21 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1295,
+                              "referencedDeclaration": 1307,
                               "type": "uint256",
                               "value": "now"
                             },
-                            "id": 665,
+                            "id": 677,
                             "name": "Identifier",
                             "src": "3303:3:3"
                           }
                         ],
-                        "id": 666,
+                        "id": 678,
                         "name": "Assignment",
                         "src": "3268:38:3"
                       }
                     ],
-                    "id": 667,
+                    "id": 679,
                     "name": "ExpressionStatement",
                     "src": "3268:38:3"
                   },
@@ -2919,11 +2919,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 518,
+                              "referencedDeclaration": 530,
                               "type": "function (address,address)",
                               "value": "MembershipRevoked"
                             },
-                            "id": 668,
+                            "id": 680,
                             "name": "Identifier",
                             "src": "3316:17:3"
                           },
@@ -2933,11 +2933,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 650,
+                              "referencedDeclaration": 662,
                               "type": "address",
                               "value": "_member"
                             },
-                            "id": 669,
+                            "id": 681,
                             "name": "Identifier",
                             "src": "3334:7:3"
                           },
@@ -2959,36 +2959,36 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1293,
+                                  "referencedDeclaration": 1305,
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 670,
+                                "id": 682,
                                 "name": "Identifier",
                                 "src": "3343:3:3"
                               }
                             ],
-                            "id": 671,
+                            "id": 683,
                             "name": "MemberAccess",
                             "src": "3343:10:3"
                           }
                         ],
-                        "id": 672,
+                        "id": 684,
                         "name": "FunctionCall",
                         "src": "3316:38:3"
                       }
                     ],
-                    "id": 673,
+                    "id": 685,
                     "name": "ExpressionStatement",
                     "src": "3316:38:3"
                   }
                 ],
-                "id": 674,
+                "id": 686,
                 "name": "Block",
                 "src": "3223:138:3"
               }
             ],
-            "id": 675,
+            "id": 687,
             "name": "FunctionDefinition",
             "src": "3164:197:3"
           },
@@ -3002,7 +3002,7 @@
               ],
               "name": "extendMembership",
               "payable": false,
-              "scope": 762,
+              "scope": 774,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "private"
@@ -3014,7 +3014,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_member",
-                      "scope": 706,
+                      "scope": 718,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -3027,12 +3027,12 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 676,
+                        "id": 688,
                         "name": "ElementaryTypeName",
                         "src": "3393:7:3"
                       }
                     ],
-                    "id": 677,
+                    "id": 689,
                     "name": "VariableDeclaration",
                     "src": "3393:15:3"
                   },
@@ -3040,7 +3040,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "duration",
-                      "scope": 706,
+                      "scope": 718,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -3053,17 +3053,17 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 678,
+                        "id": 690,
                         "name": "ElementaryTypeName",
                         "src": "3410:4:3"
                       }
                     ],
-                    "id": 679,
+                    "id": 691,
                     "name": "VariableDeclaration",
                     "src": "3410:13:3"
                   }
                 ],
-                "id": 680,
+                "id": 692,
                 "name": "ParameterList",
                 "src": "3392:32:3"
               },
@@ -3074,7 +3074,7 @@
                   ]
                 },
                 "children": [],
-                "id": 681,
+                "id": 693,
                 "name": "ParameterList",
                 "src": "3433:0:3"
               },
@@ -3083,7 +3083,7 @@
                   {
                     "attributes": {
                       "assignments": [
-                        682
+                        694
                       ]
                     },
                     "children": [
@@ -3091,7 +3091,7 @@
                         "attributes": {
                           "constant": false,
                           "name": "expiry",
-                          "scope": 706,
+                          "scope": 718,
                           "stateVariable": false,
                           "storageLocation": "default",
                           "type": "uint256",
@@ -3100,7 +3100,7 @@
                           "visibility": "internal"
                         },
                         "children": [],
-                        "id": 682,
+                        "id": 694,
                         "name": "VariableDeclaration",
                         "src": "3443:10:3"
                       },
@@ -3127,7 +3127,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "expiryTimestamp",
-                              "referencedDeclaration": 520,
+                              "referencedDeclaration": 532,
                               "type": "uint256"
                             },
                             "children": [
@@ -3147,11 +3147,11 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 529,
+                                      "referencedDeclaration": 541,
                                       "type": "mapping(address => struct ExpiringMembership.Membership storage ref)",
                                       "value": "members"
                                     },
-                                    "id": 683,
+                                    "id": 695,
                                     "name": "Identifier",
                                     "src": "3456:7:3"
                                   },
@@ -3161,21 +3161,21 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 677,
+                                      "referencedDeclaration": 689,
                                       "type": "address",
                                       "value": "_member"
                                     },
-                                    "id": 684,
+                                    "id": 696,
                                     "name": "Identifier",
                                     "src": "3464:7:3"
                                   }
                                 ],
-                                "id": 685,
+                                "id": 697,
                                 "name": "IndexAccess",
                                 "src": "3456:16:3"
                               }
                             ],
-                            "id": 686,
+                            "id": 698,
                             "name": "MemberAccess",
                             "src": "3456:32:3"
                           },
@@ -3185,21 +3185,21 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 679,
+                              "referencedDeclaration": 691,
                               "type": "uint256",
                               "value": "duration"
                             },
-                            "id": 687,
+                            "id": 699,
                             "name": "Identifier",
                             "src": "3491:8:3"
                           }
                         ],
-                        "id": 688,
+                        "id": 700,
                         "name": "BinaryOperation",
                         "src": "3456:43:3"
                       }
                     ],
-                    "id": 689,
+                    "id": 701,
                     "name": "VariableDeclarationStatement",
                     "src": "3443:56:3"
                   },
@@ -3224,7 +3224,7 @@
                               "isPure": false,
                               "lValueRequested": true,
                               "member_name": "expiryTimestamp",
-                              "referencedDeclaration": 520,
+                              "referencedDeclaration": 532,
                               "type": "uint256"
                             },
                             "children": [
@@ -3244,11 +3244,11 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 529,
+                                      "referencedDeclaration": 541,
                                       "type": "mapping(address => struct ExpiringMembership.Membership storage ref)",
                                       "value": "members"
                                     },
-                                    "id": 690,
+                                    "id": 702,
                                     "name": "Identifier",
                                     "src": "3509:7:3"
                                   },
@@ -3258,21 +3258,21 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 677,
+                                      "referencedDeclaration": 689,
                                       "type": "address",
                                       "value": "_member"
                                     },
-                                    "id": 691,
+                                    "id": 703,
                                     "name": "Identifier",
                                     "src": "3517:7:3"
                                   }
                                 ],
-                                "id": 692,
+                                "id": 704,
                                 "name": "IndexAccess",
                                 "src": "3509:16:3"
                               }
                             ],
-                            "id": 693,
+                            "id": 705,
                             "name": "MemberAccess",
                             "src": "3509:32:3"
                           },
@@ -3282,21 +3282,21 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 682,
+                              "referencedDeclaration": 694,
                               "type": "uint256",
                               "value": "expiry"
                             },
-                            "id": 694,
+                            "id": 706,
                             "name": "Identifier",
                             "src": "3544:6:3"
                           }
                         ],
-                        "id": 695,
+                        "id": 707,
                         "name": "Assignment",
                         "src": "3509:41:3"
                       }
                     ],
-                    "id": 696,
+                    "id": 708,
                     "name": "ExpressionStatement",
                     "src": "3509:41:3"
                   },
@@ -3340,11 +3340,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 512,
+                              "referencedDeclaration": 524,
                               "type": "function (address,address,uint256,uint256)",
                               "value": "MembershipExtended"
                             },
-                            "id": 697,
+                            "id": 709,
                             "name": "Identifier",
                             "src": "3560:18:3"
                           },
@@ -3354,11 +3354,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 677,
+                              "referencedDeclaration": 689,
                               "type": "address",
                               "value": "_member"
                             },
-                            "id": 698,
+                            "id": 710,
                             "name": "Identifier",
                             "src": "3579:7:3"
                           },
@@ -3380,16 +3380,16 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1293,
+                                  "referencedDeclaration": 1305,
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 699,
+                                "id": 711,
                                 "name": "Identifier",
                                 "src": "3588:3:3"
                               }
                             ],
-                            "id": 700,
+                            "id": 712,
                             "name": "MemberAccess",
                             "src": "3588:10:3"
                           },
@@ -3399,11 +3399,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 679,
+                              "referencedDeclaration": 691,
                               "type": "uint256",
                               "value": "duration"
                             },
-                            "id": 701,
+                            "id": 713,
                             "name": "Identifier",
                             "src": "3600:8:3"
                           },
@@ -3413,31 +3413,31 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 682,
+                              "referencedDeclaration": 694,
                               "type": "uint256",
                               "value": "expiry"
                             },
-                            "id": 702,
+                            "id": 714,
                             "name": "Identifier",
                             "src": "3610:6:3"
                           }
                         ],
-                        "id": 703,
+                        "id": 715,
                         "name": "FunctionCall",
                         "src": "3560:57:3"
                       }
                     ],
-                    "id": 704,
+                    "id": 716,
                     "name": "ExpressionStatement",
                     "src": "3560:57:3"
                   }
                 ],
-                "id": 705,
+                "id": 717,
                 "name": "Block",
                 "src": "3433:191:3"
               }
             ],
-            "id": 706,
+            "id": 718,
             "name": "FunctionDefinition",
             "src": "3367:257:3"
           },
@@ -3451,7 +3451,7 @@
               ],
               "name": "registerNewMember",
               "payable": false,
-              "scope": 762,
+              "scope": 774,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "private"
@@ -3463,7 +3463,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_member",
-                      "scope": 734,
+                      "scope": 746,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -3476,12 +3476,12 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 707,
+                        "id": 719,
                         "name": "ElementaryTypeName",
                         "src": "3657:7:3"
                       }
                     ],
-                    "id": 708,
+                    "id": 720,
                     "name": "VariableDeclaration",
                     "src": "3657:15:3"
                   },
@@ -3489,7 +3489,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "duration",
-                      "scope": 734,
+                      "scope": 746,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -3502,17 +3502,17 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 709,
+                        "id": 721,
                         "name": "ElementaryTypeName",
                         "src": "3674:4:3"
                       }
                     ],
-                    "id": 710,
+                    "id": 722,
                     "name": "VariableDeclaration",
                     "src": "3674:13:3"
                   }
                 ],
-                "id": 711,
+                "id": 723,
                 "name": "ParameterList",
                 "src": "3656:32:3"
               },
@@ -3523,7 +3523,7 @@
                   ]
                 },
                 "children": [],
-                "id": 712,
+                "id": 724,
                 "name": "ParameterList",
                 "src": "3697:0:3"
               },
@@ -3532,7 +3532,7 @@
                   {
                     "attributes": {
                       "assignments": [
-                        713
+                        725
                       ]
                     },
                     "children": [
@@ -3540,7 +3540,7 @@
                         "attributes": {
                           "constant": false,
                           "name": "expiry",
-                          "scope": 734,
+                          "scope": 746,
                           "stateVariable": false,
                           "storageLocation": "default",
                           "type": "uint256",
@@ -3549,7 +3549,7 @@
                           "visibility": "internal"
                         },
                         "children": [],
-                        "id": 713,
+                        "id": 725,
                         "name": "VariableDeclaration",
                         "src": "3707:10:3"
                       },
@@ -3574,11 +3574,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1295,
+                              "referencedDeclaration": 1307,
                               "type": "uint256",
                               "value": "now"
                             },
-                            "id": 714,
+                            "id": 726,
                             "name": "Identifier",
                             "src": "3720:3:3"
                           },
@@ -3588,21 +3588,21 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 710,
+                              "referencedDeclaration": 722,
                               "type": "uint256",
                               "value": "duration"
                             },
-                            "id": 715,
+                            "id": 727,
                             "name": "Identifier",
                             "src": "3726:8:3"
                           }
                         ],
-                        "id": 716,
+                        "id": 728,
                         "name": "BinaryOperation",
                         "src": "3720:14:3"
                       }
                     ],
-                    "id": 717,
+                    "id": 729,
                     "name": "VariableDeclarationStatement",
                     "src": "3707:27:3"
                   },
@@ -3627,7 +3627,7 @@
                               "isPure": false,
                               "lValueRequested": true,
                               "member_name": "expiryTimestamp",
-                              "referencedDeclaration": 520,
+                              "referencedDeclaration": 532,
                               "type": "uint256"
                             },
                             "children": [
@@ -3647,11 +3647,11 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 529,
+                                      "referencedDeclaration": 541,
                                       "type": "mapping(address => struct ExpiringMembership.Membership storage ref)",
                                       "value": "members"
                                     },
-                                    "id": 718,
+                                    "id": 730,
                                     "name": "Identifier",
                                     "src": "3744:7:3"
                                   },
@@ -3661,21 +3661,21 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 708,
+                                      "referencedDeclaration": 720,
                                       "type": "address",
                                       "value": "_member"
                                     },
-                                    "id": 719,
+                                    "id": 731,
                                     "name": "Identifier",
                                     "src": "3752:7:3"
                                   }
                                 ],
-                                "id": 720,
+                                "id": 732,
                                 "name": "IndexAccess",
                                 "src": "3744:16:3"
                               }
                             ],
-                            "id": 721,
+                            "id": 733,
                             "name": "MemberAccess",
                             "src": "3744:32:3"
                           },
@@ -3685,21 +3685,21 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 713,
+                              "referencedDeclaration": 725,
                               "type": "uint256",
                               "value": "expiry"
                             },
-                            "id": 722,
+                            "id": 734,
                             "name": "Identifier",
                             "src": "3779:6:3"
                           }
                         ],
-                        "id": 723,
+                        "id": 735,
                         "name": "Assignment",
                         "src": "3744:41:3"
                       }
                     ],
-                    "id": 724,
+                    "id": 736,
                     "name": "ExpressionStatement",
                     "src": "3744:41:3"
                   },
@@ -3743,11 +3743,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 502,
+                              "referencedDeclaration": 514,
                               "type": "function (address,address,uint256,uint256)",
                               "value": "NewMemberRegistered"
                             },
-                            "id": 725,
+                            "id": 737,
                             "name": "Identifier",
                             "src": "3795:19:3"
                           },
@@ -3757,11 +3757,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 708,
+                              "referencedDeclaration": 720,
                               "type": "address",
                               "value": "_member"
                             },
-                            "id": 726,
+                            "id": 738,
                             "name": "Identifier",
                             "src": "3815:7:3"
                           },
@@ -3783,16 +3783,16 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1293,
+                                  "referencedDeclaration": 1305,
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 727,
+                                "id": 739,
                                 "name": "Identifier",
                                 "src": "3824:3:3"
                               }
                             ],
-                            "id": 728,
+                            "id": 740,
                             "name": "MemberAccess",
                             "src": "3824:10:3"
                           },
@@ -3802,11 +3802,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 710,
+                              "referencedDeclaration": 722,
                               "type": "uint256",
                               "value": "duration"
                             },
-                            "id": 729,
+                            "id": 741,
                             "name": "Identifier",
                             "src": "3836:8:3"
                           },
@@ -3816,31 +3816,31 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 713,
+                              "referencedDeclaration": 725,
                               "type": "uint256",
                               "value": "expiry"
                             },
-                            "id": 730,
+                            "id": 742,
                             "name": "Identifier",
                             "src": "3846:6:3"
                           }
                         ],
-                        "id": 731,
+                        "id": 743,
                         "name": "FunctionCall",
                         "src": "3795:58:3"
                       }
                     ],
-                    "id": 732,
+                    "id": 744,
                     "name": "ExpressionStatement",
                     "src": "3795:58:3"
                   }
                 ],
-                "id": 733,
+                "id": 745,
                 "name": "Block",
                 "src": "3697:163:3"
               }
             ],
-            "id": 734,
+            "id": 746,
             "name": "FunctionDefinition",
             "src": "3630:230:3"
           },
@@ -3854,7 +3854,7 @@
               ],
               "name": "isMember",
               "payable": false,
-              "scope": 762,
+              "scope": 774,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
@@ -3866,7 +3866,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_member",
-                      "scope": 748,
+                      "scope": 760,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -3879,17 +3879,17 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 735,
+                        "id": 747,
                         "name": "ElementaryTypeName",
                         "src": "3966:7:3"
                       }
                     ],
-                    "id": 736,
+                    "id": 748,
                     "name": "VariableDeclaration",
                     "src": "3966:15:3"
                   }
                 ],
-                "id": 737,
+                "id": 749,
                 "name": "ParameterList",
                 "src": "3965:17:3"
               },
@@ -3899,7 +3899,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 748,
+                      "scope": 760,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bool",
@@ -3912,17 +3912,17 @@
                           "name": "bool",
                           "type": "bool"
                         },
-                        "id": 738,
+                        "id": 750,
                         "name": "ElementaryTypeName",
                         "src": "4001:4:3"
                       }
                     ],
-                    "id": 739,
+                    "id": 751,
                     "name": "VariableDeclaration",
                     "src": "4001:4:3"
                   }
                 ],
-                "id": 740,
+                "id": 752,
                 "name": "ParameterList",
                 "src": "4000:6:3"
               },
@@ -3930,7 +3930,7 @@
                 "children": [
                   {
                     "attributes": {
-                      "functionReturnParameters": 740
+                      "functionReturnParameters": 752
                     },
                     "children": [
                       {
@@ -3954,11 +3954,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1295,
+                              "referencedDeclaration": 1307,
                               "type": "uint256",
                               "value": "now"
                             },
-                            "id": 741,
+                            "id": 753,
                             "name": "Identifier",
                             "src": "4024:3:3"
                           },
@@ -3988,11 +3988,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 761,
+                                  "referencedDeclaration": 773,
                                   "type": "function (address) view returns (uint256)",
                                   "value": "getMembershipExpiryDate"
                                 },
-                                "id": 742,
+                                "id": 754,
                                 "name": "Identifier",
                                 "src": "4031:23:3"
                               },
@@ -4002,36 +4002,36 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 736,
+                                  "referencedDeclaration": 748,
                                   "type": "address",
                                   "value": "_member"
                                 },
-                                "id": 743,
+                                "id": 755,
                                 "name": "Identifier",
                                 "src": "4055:7:3"
                               }
                             ],
-                            "id": 744,
+                            "id": 756,
                             "name": "FunctionCall",
                             "src": "4031:32:3"
                           }
                         ],
-                        "id": 745,
+                        "id": 757,
                         "name": "BinaryOperation",
                         "src": "4024:39:3"
                       }
                     ],
-                    "id": 746,
+                    "id": 758,
                     "name": "Return",
                     "src": "4017:46:3"
                   }
                 ],
-                "id": 747,
+                "id": 759,
                 "name": "Block",
                 "src": "4007:63:3"
               }
             ],
-            "id": 748,
+            "id": 760,
             "name": "FunctionDefinition",
             "src": "3948:122:3"
           },
@@ -4045,7 +4045,7 @@
               ],
               "name": "getMembershipExpiryDate",
               "payable": false,
-              "scope": 762,
+              "scope": 774,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
@@ -4057,7 +4057,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_member",
-                      "scope": 761,
+                      "scope": 773,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -4070,17 +4070,17 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 749,
+                        "id": 761,
                         "name": "ElementaryTypeName",
                         "src": "4266:7:3"
                       }
                     ],
-                    "id": 750,
+                    "id": 762,
                     "name": "VariableDeclaration",
                     "src": "4266:15:3"
                   }
                 ],
-                "id": 751,
+                "id": 763,
                 "name": "ParameterList",
                 "src": "4265:17:3"
               },
@@ -4090,7 +4090,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 761,
+                      "scope": 773,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -4103,17 +4103,17 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 752,
+                        "id": 764,
                         "name": "ElementaryTypeName",
                         "src": "4301:4:3"
                       }
                     ],
-                    "id": 753,
+                    "id": 765,
                     "name": "VariableDeclaration",
                     "src": "4301:4:3"
                   }
                 ],
-                "id": 754,
+                "id": 766,
                 "name": "ParameterList",
                 "src": "4300:6:3"
               },
@@ -4121,7 +4121,7 @@
                 "children": [
                   {
                     "attributes": {
-                      "functionReturnParameters": 754
+                      "functionReturnParameters": 766
                     },
                     "children": [
                       {
@@ -4132,7 +4132,7 @@
                           "isPure": false,
                           "lValueRequested": false,
                           "member_name": "expiryTimestamp",
-                          "referencedDeclaration": 520,
+                          "referencedDeclaration": 532,
                           "type": "uint256"
                         },
                         "children": [
@@ -4152,11 +4152,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 529,
+                                  "referencedDeclaration": 541,
                                   "type": "mapping(address => struct ExpiringMembership.Membership storage ref)",
                                   "value": "members"
                                 },
-                                "id": 755,
+                                "id": 767,
                                 "name": "Identifier",
                                 "src": "4324:7:3"
                               },
@@ -4166,46 +4166,46 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 750,
+                                  "referencedDeclaration": 762,
                                   "type": "address",
                                   "value": "_member"
                                 },
-                                "id": 756,
+                                "id": 768,
                                 "name": "Identifier",
                                 "src": "4332:7:3"
                               }
                             ],
-                            "id": 757,
+                            "id": 769,
                             "name": "IndexAccess",
                             "src": "4324:16:3"
                           }
                         ],
-                        "id": 758,
+                        "id": 770,
                         "name": "MemberAccess",
                         "src": "4324:32:3"
                       }
                     ],
-                    "id": 759,
+                    "id": 771,
                     "name": "Return",
                     "src": "4317:39:3"
                   }
                 ],
-                "id": 760,
+                "id": 772,
                 "name": "Block",
                 "src": "4307:56:3"
               }
             ],
-            "id": 761,
+            "id": 773,
             "name": "FunctionDefinition",
             "src": "4233:130:3"
           }
         ],
-        "id": 762,
+        "id": 774,
         "name": "ContractDefinition",
         "src": "202:4164:3"
       }
     ],
-    "id": 763,
+    "id": 775,
     "name": "SourceUnit",
     "src": "0:4366:3"
   },
@@ -4215,5 +4215,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-01-06T12:19:56.099Z"
+  "updatedAt": "2018-01-06T12:34:48.122Z"
 }

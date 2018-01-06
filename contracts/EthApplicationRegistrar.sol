@@ -99,7 +99,7 @@ contract EthApplicationRegistrar is ApplicationSource, owned {
 
         // If the following operation fails because we run out of gas, for example,
         // the applicant will have to withdraw the funds themselves
-        this.call.gas(30000)("processWithdrawalForAccount(address)", msg.sender);
+        this.call.gas(30000)(bytes4(sha3("processWithdrawalForAccount(address)")), msg.sender);
     }
 
     /**
@@ -139,7 +139,7 @@ contract EthApplicationRegistrar is ApplicationSource, owned {
 
         // If the following operation fails because we run out of gas, for example,
         // the owner will have to withdraw the funds themselves
-        this.call.gas(30000)("processWithdrawalForAccount(address)", owner);
+        this.call.gas(30000)(bytes4(sha3("processWithdrawalForAccount(address)")), owner);
     }
 
     function applicationRejected(address _applicant, address _approver) byApplicationsContract {
@@ -150,7 +150,7 @@ contract EthApplicationRegistrar is ApplicationSource, owned {
 
         // If the following operation fails because we run out of gas, for example,
         // the applicant will have to process the refund themselves
-        this.call.gas(30000)("processWithdrawalForAccount(address)", _applicant);
+        this.call.gas(30000)(bytes4(sha3("processWithdrawalForAccount(address)")), _applicant);
     }
 
     function() payable {
