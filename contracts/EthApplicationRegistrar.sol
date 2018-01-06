@@ -96,6 +96,10 @@ contract EthApplicationRegistrar is ApplicationSource, owned {
         balance[msg.sender] += paid;
         applications.withdrawApplication(msg.sender);
         MembershipRequestWithdrawn(msg.sender, paid);
+
+        // If the following operation fails because we run out of gas, for example,
+        // the applicant will have to withdraw the funds themselves
+        this.call.gas(30000)("processWithdrawalForAccount", msg.sender);
     }
 
     /**
